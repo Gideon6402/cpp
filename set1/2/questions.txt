@@ -1,0 +1,9 @@
+1) In a declarations the programmers assigns a location to a variable and states what type (int, float, double) this locations represent in a definition an actual value is assigned to this   memory location
+   
+2) A header file can contain functions, variables and objects that can be used in the program.
+  
+3) During the compiling (during g++ -c hello.cc) the compiler looks at the header files and uses this information to know how to treat the variables and functions of the header. During this process it does not know yet what the actual code of these function is nor does it now how the variables/objects are defined. During the linking phase (during g++ -o hello hello.cc) the compiler (g++) looks up the functions in libraries and links it with the variables/function/objects.
+
+4) An object module is for example my hello.o file. During the linking phase the compiler links a bunch of objects together. One of those object are the libraries that are needed to link the code.
+
+5) Because it is not yet linked and can therefore not be excucuted yet.

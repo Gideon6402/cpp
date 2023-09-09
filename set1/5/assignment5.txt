@@ -1,0 +1,10 @@
+Short summary:
+Explain piping and redirection
+
+Explanation:
+	Redirection:
+	Supose with have 'program < in', in this case the contents of 'in' will be used as input for 'program'. Supose we have 'program > out', in this case the output of 'program' will be stored in the (created if necesary) text file with the name 'out'. This means the the code line 'program < in > out' will excecuted the program 'program' with the input 'in' and will print the output unto the text file 'out'.
+
+	Piping:
+	Supose with have 'program | less'. In this case the output of the program 'program' will be used as an argument for the program 'less'.
+

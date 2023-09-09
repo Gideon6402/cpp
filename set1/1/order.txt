@@ -1,0 +1,6 @@
+textfiles/shortSummary.txt
+hello.cc
+textfiles/commands.txt
+textfiles/descriptions.txt
+textfiles/out
+textfiles/programSizes.txt

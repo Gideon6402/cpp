@@ -1,0 +1,13 @@
+hello.cc
+Uncompiled text file which contains the listing
+
+a.out:
+Compiled file that, if excecuted, displays "Hello World"
+
+hello
+Compiled file that, if excecuted, displays "Hello World"
+
+hello.o
+Object that is compiled but not yet listed. It cannot be excecuted. It can however be used to
+to compile multiple programs together
+

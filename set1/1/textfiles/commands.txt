@@ -1,0 +1,11 @@
+g++-13 hello.cc -Wall -Werror --std=c++23
+g++-13 -o hello hello.cc -Wall -Werror --std=c++23
+g++-13 -c -o hello.o hello.cc -Wall -Werror --std=c++23
+
+./hello > out
+
+ls -l >> programSizes.txt
+
+cd /usr/include/c++
+ls -l iostream >> /home/gideon/cpp/set1/1/textfiles/programSizes.txt
+
