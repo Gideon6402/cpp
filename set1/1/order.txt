@@ -4,3 +4,4 @@ textfiles/commands.txt
 textfiles/descriptions.txt
 textfiles/out
 textfiles/programSizes.txt
+test.txt #doesn't exit
