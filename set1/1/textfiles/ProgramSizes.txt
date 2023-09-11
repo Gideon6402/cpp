@@ -1,6 +1,0 @@
-total 32
--rwxrwxr-x 1 gideon gideon 16352 sep  8 20:07 hello
--rw-rw-r-- 1 gideon gideon    69 sep  8 20:00 hello.cc
--rw-rw-r-- 1 gideon gideon  1896 sep  8 20:09 hello.o
--rw-rw-r-- 1 gideon gideon    77 sep  9 13:41 order.txt
-drwxrwxr-x 2 gideon gideon  4096 sep  9 13:48 textfiles
