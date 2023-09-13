@@ -9,9 +9,9 @@ int main()
 
     do
     {
-    string word;
-    getline(cin, word);
-    Input += word;
+    string line;
+    getline(cin, line);
+    Input += line += '\n';
     }
     while (!cin.eof() );
         
