@@ -1,0 +1,1 @@
+Make a pogram that reverses each line of the input and outputs it.
