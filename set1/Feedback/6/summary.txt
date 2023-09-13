@@ -1,0 +1,2 @@
+Find 6 ways to determine whether a number is odd or even. 
+Only use the standard operators (no functions) and use them only once.

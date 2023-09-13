@@ -1,0 +1,16 @@
+JB: 1
+Redirection using `<` and `>` can be used to read a file as input to a command or write the output of a command to a file, respectively.
+
+In particular, the line:
+
+program < in > out
+
+uses the contents of file `in` as input for the command `program` and writes the result to the file `out`.
+
+Piping uses the output of one command as the input for another.
+
+For example, the line:
+
+program | less
+
+Uses the output of the command `program` and uses it as an argument to the command `less`, which shows the text in a scrollable way.

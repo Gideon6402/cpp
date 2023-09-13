@@ -1,0 +1,1 @@
+Write a function to display its arguments. When only 1 argument is given, display that argument. Else, display the argument the first argument points to.

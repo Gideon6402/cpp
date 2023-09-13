@@ -1,0 +1,13 @@
+JB:?
+Six major aspects of C++ not in C:
+1: Namespaces, a way to make different functions with the same name.
+2: End of line comment "//", a way to make comments at the end of lines.
+3: Function overloading, C++ allows for functions with the same name but having different arguments to exist.
+4: Structs with functions as members, we can declare functions within structs, making an object.
+5: Operants evaluation order, the evluation orders of expressions using postfix operators,
+ assignment expressions and operants of shift operators are defined.
+6: Default arguments when declaring a function,
+ a function can have predetermined default arguments which when no argument is specified the compiler can fill-in.
+
+JB: Function overloading and objects are mojor differences. The rest are
+JB: relatively small points that perhaps together make up one larger item.

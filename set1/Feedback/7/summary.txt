@@ -1,0 +1,1 @@
+The purpose of this C++ programming exercise is to practice using bit-field operations to initialize a `size_t` value field within a union. The goal is to set specific bit ranges to predefined values and then display the variable as a hexadecimal value using a single `cout` statement in the `main` function.

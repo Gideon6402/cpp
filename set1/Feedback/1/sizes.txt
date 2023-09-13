@@ -1,0 +1,5 @@
+bytes	filename
+68	hello.cc
+1888	hello.o
+14400	hello.out
+3074	/usr/include/c++/13.2.1/iostream

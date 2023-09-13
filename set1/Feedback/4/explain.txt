@@ -1,0 +1,7 @@
+Since the string contains the sequence )" and this is also the marker
+for the end of the string, the compiler will think it has read
+the string in its entirety when it has not yet done so.
+We can fix this by adding a (normally optional) label/delimeter
+which is not contained in the RSL.
+The rule is that we will not be able to use )" (or any other delimeter)
+at the end of a string when this sequence is part of the string itself.

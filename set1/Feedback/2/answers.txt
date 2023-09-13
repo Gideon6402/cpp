@@ -1,0 +1,19 @@
+JB: ?
+Answers:
+The difference between a declaration and definition is that a definition introduces a new object and 
+allocates memory for it, while a declaration does not allocate memory, it merely announces a variable exists. (A declaration just announces the function's name and type)
+
+Header files are used for defining external functions, they declare functions that can be used by multiple programs, like iostream declares cout.
+JB: std::cout is an object, not a function.
+
+The compiler uses header files while in the preprocessor fase because the header files declare some functions, like cout.
+JB: Non-sequitur. Or at least I don't see the logic.
+The compiler uses libraries while in the linking fase, because here the compiler searches for what the code of the declared functions are in the libraries.
+JB: What is 'code' here? And please fix grammar.
+
+A library is not object module, it is a collection of object modules.
+
+The object is not executable beacause it does not contain all the code it referneces to. 
+The linker must first link the objects together to create executable code.
+
+
