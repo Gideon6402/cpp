@@ -1,6 +1,16 @@
-1) The C++ compiler is way stricter with the type const addition. The C compiller just a warning when a const is changed but the C++ compiler stops working.
-2) One can add namespaces, this makes it possible to have clearer code and prevents a user from using a variable name twice for different variables.
-3) In C++ we know use the <iostream> and its object cin and cout. This is a great improvement over printf and scanf because the input and the output can now be manipulated in many more ways.
-4) In C++ one can use references. This facilitates an easier way to handle with memory adresses.
-5) In C++ one can use function overloading. With this one can know decide what to do with a function based on what the input type is.
-6) In C++ one can use operator overloading, this is for example very convenient for using << both for a bitwise operation and to add a string to a stream
+1) Upgrade of objects: functions can be added, information can be set to 
+private.
+2) References are added which is a completely new way of dealing with 
+adresses.
+3) Namespaces are added, this helps keeping variables, functions and 
+classes local. In addition to that, it is now possible to add an 
+initializer to a conditional statement.
+4) The streams std:cin and std:cout from the header <iostream> are added. 
+This gives the programmer a way more powerfull tool the handle input and 
+output.
+5) Many new types are added. For example: wchar_t, size_t, bool. On top of 
+that also std::string is added which gives a more powerful object to deal 
+with strings.
+6) Funtionalities are added: for loops can know also iterate over lists, 
+functions can be overloaded which means that a function can do different 
+things dependent on the input type.
