@@ -37,11 +37,8 @@ int main()
             power != -1; --power)
     {   
         int bitValue = pow(2, power);
-        int bit = value / pow(2, power);
-        int remainder = value % bitValue;
-        
-        value = remainder;
-
+        int bit = value / bitValue;
+        value %= bitValue;
         
         if(bit)
         {
