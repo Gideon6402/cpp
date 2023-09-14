@@ -1,0 +1,10 @@
+total 40
+-rw-rw-r-- 1 gideon gideon    22 sep 14 12:26 answer.txt
+-rw-rw-r-- 1 gideon gideon   120 sep 14 12:27 hello.cc
+-rw-rw-r-- 1 gideon gideon  1896 sep 14 12:32 hello.o
+-rwxrwxr-x 1 gideon gideon 16352 sep 14 12:32 hello.out
+-rw-rw-r-- 1 gideon gideon    20 sep 14 12:27 order.txt
+-rw-rw-r-- 1 gideon gideon    12 sep 14 12:33 output.txt
+-rw-rw-r-- 1 gideon gideon     0 sep 14 12:55 sizes.txt
+drwxrwxr-x 2 gideon gideon  4096 sep 10 21:37 textfiles
+-rw-r--r-- 1 root root 3024 jul 11 10:50 /usr/include/c++/13/iostream

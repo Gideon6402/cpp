@@ -1,0 +1,15 @@
+Commands:
+g++-13 -Wall -Werror --std=c++23 -o hello.o -c hello.cc
+g++-13 -Wall -Werror --std=c++23 -o hello.out hello.o
+./hello.out > output.txt
+
+Descriptions:
+An object file is a file that is an intermidiate state. 
+The compiler has compiled the listing into computer readable
+file but references to other files (such as headers and extern
+variables) are not yet linked. This file cannot be executed yet.
+
+An excutable is linked. Possibly multiple files and their headers
+are combined to make one excutable file.
+
+
