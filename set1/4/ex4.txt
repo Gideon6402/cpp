@@ -1,0 +1,6 @@
+Short summary:
+Change to code such that it uses a RSL. Make sure the output 
+stays the same. Formulate a rule when to use what form.
+
+Rule: If the string contains parenthesis use:
+R"delimiter( ... ) otherwise use R"( ... )

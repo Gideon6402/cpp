@@ -1,4 +1,4 @@
-assignment4.txt
+ex4.txt
 RSL.cc
 output.txt
 

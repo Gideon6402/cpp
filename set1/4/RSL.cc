@@ -2,8 +2,8 @@
 
 namespace
 {
-    char code[] =
-R"delimiter(^\s+Encryption key:(\w+)
+    //Define RSL
+    char text[] =R"delimiter(^\s+Encryption key:(\w+)
 ^\s+Quality=(\d)+
 ^\s+E?SSID:"([[:print:]]+)"
 ^\s+ssid="([[:print:]]+)"
@@ -12,5 +12,5 @@ R"delimiter(^\s+Encryption key:(\w+)
 
 int main()
 {
-    std::cout << code;
+    std::cout << text; //print the text on ouput stream
 }
