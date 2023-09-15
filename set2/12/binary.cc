@@ -1,56 +1,60 @@
 #include <iostream>
 #include <string>
-#include <math.h>
 #include <typeinfo>
 
 int main()
 {
     using namespace std;
-    int value;                         //declare
+    int value;                         
     cin >> value;                      //read command line
-
-    int sizeOfvalue = sizeof(value)*4; //determine size of value
     
-    //This string will contain everything up untill '<binary value> ='
+    //This string will contain "<input> = <binary representation> = ""
     string ouput;
-    //This string will contain the rest of the output            
-    string Calculation;  
+    //This string will contain the calculation
+    string calculation;  
 
     ouput += to_string(value); 
     ouput += " = ";
 
-    // in the this system
-    // - add 0 if first bit is 0
-    // - substract -32768 if first bit is -1
-    if (value >= 0)
+    int size = sizeof(value) * 8;       //number of bits of the input
+
+    // in two's complement (-2)^32 corresponds to 1 with 31 zeros and
+    // -1 to highest binary respresentation: 32 ones. Therefore we 
+    // add 2^32 to negative numbers and then treat them as if they are
+    // unsigned integers. 
+    size_t svalue;
+    if (value < 0)
     {
-        ouput += '0'; // Positive thus first bit zero and add nothing
+        value += 1 << (size - 1);          
+        svalue = value + (1 << (size-1) );
+        calculation += '-'; 
     }
     else
     {
-        ouput += '1';
-        Calculation += '-32782';
-        value += 32768; //compensate for adding
+        svalue = value;
     }
 
-    for(int power = sizeOfvalue -2;
+    // interpert value as unsigned int. Determines binary representation
+    // of value.
+    for(int power = size - 1;          // powers start with zero
             power != -1; --power)
     {   
-        int bitValue = pow(2, power);
-        int bit = value / bitValue;
-        value %= bitValue;
+        size_t bitValue = 1 << power;  // 1 << power is eq to pow(2, power)
+        size_t bit = svalue / bitValue;// 0 or 1?
+        svalue %= bitValue;            // remove calculated part
         
-        if(bit)
+        
+        if(bit)                         // don't add 0*bitValue
         {
-            Calculation += to_string(bitValue * bit) += " + ";
+            calculation += to_string(bitValue) += " + ";
         }
 
-        ouput += to_string(bit);
+        ouput += to_string(bit);        //add bit to bitstring
     }
 
-    ouput += " = ";
-    string::size_type on = Calculation.length();
-    Calculation.erase(on - 3, on);         //erase the last ' + '
-    cout << ouput << Calculation << '\n';
+    ouput += " = ";                   //complete first part of output
+    string::size_type on = calculation.length();
+    calculation.erase(on - 3, on);     //erase the last ' + '
+    cout << ouput << calculation << '\n';
     
 }
