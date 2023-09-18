@@ -57,5 +57,5 @@ int main()
     {
         cout << "No number satisfying the requirements is found\n";
         return 1; 
-    }  
+    } 
 }
