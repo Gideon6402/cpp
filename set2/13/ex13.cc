@@ -1,42 +1,61 @@
-    #include <iostream>
+#include <iostream>
+#include <cmath>
 
-    int main()
+
+enum
+{
+    BEGIN = 100,
+    END = 1000,
+    ADD = 32,
+    SUBS = 13
+};
+
+int main()
+{
+    using namespace std;
+    bool numberFound = false;
+    for(int nr = 100; nr != 1000; ++nr)
     {
-        using namespace std;
-        enum
+        bool boolLow = false;        // true if substracting 13 gives a square
+        bool boolHigh = false;       // true if adding 32 gives a square
+
+        int low = nr - SUBS;         
+        int high = nr + ADD;
+
+        double sqrtLow = sqrt(low); 
+        // round of to lowest integer:
+        int int_sqrtLow = static_cast<int>(sqrtLow); 
+        double diff = sqrtLow - int_sqrtLow;
+        double zero = 0.0;
+        // if rounding of didn't change sqrtLow than it was a square
+        if(diff == zero)
         {
-            BEGIN = 100,
-            END = 1000,
-            ADD = 32,
-            SUBS = 13
-        };
-
-        size_t size = END + ADD - (BEGIN - SUBS);
-
-        int squares[size];
-
-        size_t i = 0;
-        size_t square = 0;
-        while( square <= (END + ADD) );
-        {
-            square[]
-        }
-        
-
-        for(size_t n = 0, i = 0, square = 0;
-                 square <= END + ADD; ++n, ++i)
-        {
-            square = n*n;
-            squares[i] =  square;
+            boolLow = true;
         }
 
-        for(size_t nr = BEGIN; nr != (END + 1); ++nr)
-            {
-                cout << squares[nr] << '\n';
-                size_t low = nr - SUBS;
-                size_t high = nr + ADD;
+        // do the same for nr + 32
+        double sqrtHigh = sqrt(high); 
+        int int_sqrtHigh = static_cast<int>(sqrtHigh);
+        // no need to declare diff and zero this time
+        diff = sqrtHigh - int_sqrtHigh;
+        zero = 0.0;
+        if(diff == zero)
+        {
+            boolHigh = true;
+        }
 
-                for(el in squares)
-            }
-
+        // if both requirements are satisfied:
+        if(boolLow & boolHigh)
+        {
+            cout << nr << " satisfies the requirements" << '\n';
+            numberFound = true;
+            break;
+        } 
     }
+
+    if(not numberFound)
+    {
+        cout << "No number satisfying the requirements is found\n";
+        return 1; 
+    }  
+}

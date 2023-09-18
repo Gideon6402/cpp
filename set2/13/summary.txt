@@ -1,0 +1,6 @@
+Find a number that satisfies the following requierments:
+1) number has 3 digits
+2) number + 32 is a square
+3) number - 13 is a square
+
+Give an error if no number is found.
