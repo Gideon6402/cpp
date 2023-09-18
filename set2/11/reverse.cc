@@ -1,27 +1,24 @@
 #include <iostream>
-#include <typeinfo>
 #include <string>
+
+using namespace std;
 
 int main()
 {
-    using namespace std;
-    string Input;
-    string reverseLine;
-
     do
     {
-    string line;
-    getline(cin, line);
+    string text;                       // contains input text
+    getline(cin, text);                // copies redirected input to text
 
-    for(string::const_reverse_iterator iter = line.crbegin();
-            iter != line.crend(); ++iter)
-                {
-                    reverseLine += *iter;
-                }
+    for(string::const_reverse_iterator iter = text.crbegin();
+        iter != text.crend(); ++iter)
+        {
+            // add characters to output in reverse direction
+            cout << *iter;
+        }
 
-    reverseLine += '\n';
+    cout << '\n'; 
     }
+    // execute while lope while cin object has no eof flag
     while (!cin.eof() );
-
-    cout << reverseLine << '\n';
 }
