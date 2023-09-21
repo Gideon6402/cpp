@@ -6,9 +6,7 @@ using namespace std;
 int main()
 {
     size_t value;
-    // cin >> value;
-
-    value = ~0;
+    cin >> value;
 
     // cout << (value%2 == 0 ? "even" : "odd") << endl;
     // cout << ( (value & 1) == 1 ? "odd" : "even") << endl;
