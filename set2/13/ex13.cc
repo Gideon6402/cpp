@@ -14,7 +14,7 @@ int main()
 {
     using namespace std;
     bool numberFound = false;
-    for(int const nr = 100; nr != 1000; ++nr)
+    for(int nr = 100; nr != 1000; ++nr)
     {
         bool boolLow = false;        // true if substracting 13 gives a square
         bool boolHigh = false;       // true if adding 32 gives a square
@@ -25,7 +25,7 @@ int main()
         double const sqrtLow = sqrt(low); 
         // round of to lowest integer:
         int const int_sqrtLow = static_cast<int>(sqrtLow); 
-        double const diff = sqrtLow - int_sqrtLow;
+        double diff = sqrtLow - int_sqrtLow;
         double const zero = 0.0;
         // if rounding of didn't change sqrtLow than it was a square
         if(diff == zero)
@@ -38,7 +38,6 @@ int main()
         int const int_sqrtHigh = static_cast<int>(sqrtHigh);
         // no need to declare diff and zero this time
         diff = sqrtHigh - int_sqrtHigh;
-        zero = 0.0;
         if(diff == zero)
         {
             boolHigh = true;
