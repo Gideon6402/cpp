@@ -1,4 +1,7 @@
-#include "main.hh"                 
+// main.hh or main.ih ?
+
+
+#include "main.hh"                
 
 int main(int argc, char *argv[])
 {
