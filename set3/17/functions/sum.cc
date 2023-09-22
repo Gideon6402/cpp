@@ -1,7 +1,18 @@
+#include "functions.ih"
+
 int sum(int argc, char *argv[])
 {
     int sum = 0;                           // is this a local variable?
     for(int  i = 0; i != argc; ++i)
-        sum += argv[i];                    // is this correct?
+    {
+        using namespace std;
+        string chvalue = *argv[i];         // do I need to declare chvalue as being an adress?
+        int ivalue = stoi(&chvalue);
+        sum += ivalue;
+    }                                      // is this correct?
     return sum;
 }
+
+
+
+// why doesn't make treat all warning as errors?

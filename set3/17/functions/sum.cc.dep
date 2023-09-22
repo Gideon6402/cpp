@@ -1,0 +1,2 @@
+functions/sum.o: functions/sum.cc functions/functions.ih
+functions/functions.ih:
