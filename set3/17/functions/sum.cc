@@ -1,6 +1,6 @@
 #include "functions.ih"
 
-int sum(int argc, char *argv[])
+int sum(int argc, char **argv)
 {
     int sum = 0;                           // is this a local variable?
     for(int  i = 0; i != argc; ++i)
@@ -16,3 +16,4 @@ int sum(int argc, char *argv[])
 
 
 // why doesn't make treat all warning as errors?
+// What am I not understanding here?
