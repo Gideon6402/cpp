@@ -28,7 +28,7 @@ int main(int const argc, char const *argv[])
             // and turn all other bits to zero
             if ( (Switch >> nbit) & 1 == 1)
             {
-                cout << arg[nbit] << " " ; 
+                cout << argv[nbit] << " " ; 
             }
         }
         cout << '\n';
