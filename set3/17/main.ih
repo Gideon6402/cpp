@@ -1,1 +1,2 @@
-#include "functions/functions.hh"
+#include "aux/aux.hh"
+#include <iostream>
