@@ -1,0 +1,4 @@
+functions/sum2.o: functions/sum2.cc functions/functions.ih \
+ functions/functions.hh
+functions/functions.ih:
+functions/functions.hh:

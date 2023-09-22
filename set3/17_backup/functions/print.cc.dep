@@ -1,0 +1,4 @@
+functions/print.o: functions/print.cc functions/functions.ih \
+ functions/functions.hh
+functions/functions.ih:
+functions/functions.hh:

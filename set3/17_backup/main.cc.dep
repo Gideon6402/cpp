@@ -1,0 +1,3 @@
+main.o: main.cc main.ih functions/functions.hh
+main.ih:
+functions/functions.hh:

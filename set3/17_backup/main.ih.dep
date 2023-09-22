@@ -1,0 +1,2 @@
+main.ih.gch: main.ih functions/functions.hh
+functions/functions.hh:
