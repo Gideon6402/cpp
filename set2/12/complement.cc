@@ -16,17 +16,19 @@ int main()
     ouput += to_string(value); 
     ouput += " = ";
 
-    int size = sizeof(value) * 8;       //number of bits of the input
+    size_t size = sizeof(value) * 8;        //number of bits of the input
 
     // in two's complement (-2)^32 corresponds to 1 with 31 zeros and
     // -1 to highest binary respresentation: 32 ones. Therefore we 
     // add 2^32 to negative numbers and then treat them as if they are
     // unsigned integers. 
-    size_t svalue;
+    size_t svalue;                          // unsigned value
     if (value < 0)
     {
-        value += 1 << (size - 1);          
-        svalue = value + (1 << (size-1) );
+        value += 1 << (size - 1);
+        int i_firstBit = 1 << (size - 1);
+        size_t st_firstBit = static_cast<size_t>(i_firstBit);      
+        svalue = value + st_firstBit;       //going correct here?
         calculation += '-'; 
     }
     else
@@ -36,7 +38,7 @@ int main()
 
     // interpert value as unsigned int. Determines binary representation
     // of value.
-    for(int power = size - 1;          // powers start with zero
+    for(int power = size - 1;               // powers start with zero
             power != -1; --power)
     {   
         size_t bitValue = 1 << power;  // 1 << power is eq to pow(2, power)
