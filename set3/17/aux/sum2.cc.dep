@@ -1,3 +1,0 @@
-aux/sum2.o: aux/sum2.cc aux/aux.ih aux/aux.hh
-aux/aux.ih:
-aux/aux.hh:
