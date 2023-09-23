@@ -1,0 +1,5 @@
+main.o: main.cc main.ih aux/aux.hh aux/aux.ih aux/aux.hh
+main.ih:
+aux/aux.hh:
+aux/aux.ih:
+aux/aux.hh:

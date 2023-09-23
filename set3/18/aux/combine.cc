@@ -1,19 +1,21 @@
 #include "aux.ih"
 
-ReturnValues combine(int argc, char argv)
+ReturnValues combine(int argc, char **argv)
 {
     ReturnValues returnValues;
 
     if(argc==1)                    // can this be done more beatiful?
     {
         returnValues.ok = false;
-        returnValuess.value = " ";
+        returnValues.value = " ";
     }
     else
     {
         returnValues.ok = true;
-        returnValues.nr = argv[1];
-        returnValues.value = argv[ argv[1] ];  //inefficient (twice called argv[1]);
+
+        size_t argNr = stoi( argv[1] );
+        returnValues.nr = argNr;
+        returnValues.value = argv[argNr];  
     }
     return returnValues;
 }
