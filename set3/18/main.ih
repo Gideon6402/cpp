@@ -1,3 +1,2 @@
 #include "aux/aux.hh"
-
-struct Returnvalues returnvalues;
+extern struct Returnvalues returnvalues;
