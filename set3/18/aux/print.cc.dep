@@ -1,4 +1,0 @@
-aux/print.o: aux/print.cc aux/aux.ih aux/aux.hh aux/aux.ih
-aux/aux.ih:
-aux/aux.hh:
-aux/aux.ih:
