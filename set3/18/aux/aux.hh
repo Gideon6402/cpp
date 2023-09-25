@@ -1,18 +1,18 @@
 #ifndef aux_hh
 #define aux_hh
 
-#include "aux.ih"
+#include <string>
 
 struct ReturnValues
 {
     bool ok;
-    size_t nr;
-    string value;
+    std::size_t nr;
+    std::string value;
 };
 
 ReturnValues combine(int argc, char **argv);
 bool structCall(int argc, char **argv);
 void boundCall(int argc, char **argv);
-void print(size_t nr, string value);
+void print(std::size_t nr, std::string value);
 
 #endif

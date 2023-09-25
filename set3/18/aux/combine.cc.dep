@@ -1,0 +1,3 @@
+aux/combine.o: aux/combine.cc aux/aux.ih aux/aux.hh
+aux/aux.ih:
+aux/aux.hh:
