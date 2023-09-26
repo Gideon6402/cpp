@@ -13,9 +13,11 @@ int main(int argc, char **argv)
     else if ( arg.compare("-l") )
         count_lines();
     else
-        cout << "No valid argument";
+        cerr << "No valid argument\n";
+    
+    cout << '\n';
 }
 
 
-// assume == works for **char and string objects
-// can I use argv[1] multiple times?
+
+// can I use argv[1] multiple times, would it be better? -Jurjen

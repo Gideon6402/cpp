@@ -1,0 +1,2 @@
+count_characters.o: count_characters.cc main.ih
+main.ih:

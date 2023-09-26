@@ -1,0 +1,2 @@
+count_words.o: count_words.cc main.ih
+main.ih:

@@ -1,0 +1,2 @@
+count_lines.o: count_lines.cc main.ih
+main.ih:
