@@ -212,18 +212,19 @@ Same as with integer but know we could check which string is lexiographically gr
 
 return a const rvalue-reference to an int?
 
-
+This is never appropiate to use. A return value is an rvalue on itself and usually is assigned to an lvalue.
 
 
 return a const rvalue-reference to a std::string?
+
+Dito
+
 return an rvalue-reference to an int?
+Dito
+
+
 return an rvalue-reference to a std::string?
-
-
-I don't see why we ever have to make the return type a reference. Can't we make it  a reference when we use the return value as in
-
-&x = fun(x) 
-??
+Dito
 
 
 
