@@ -1,0 +1,2 @@
+findcase.o: findcase.cc main.ih
+main.ih:

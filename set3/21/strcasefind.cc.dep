@@ -1,0 +1,2 @@
+strcasefind.o: strcasefind.cc main.ih
+main.ih:

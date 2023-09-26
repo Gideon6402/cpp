@@ -1,0 +1,6 @@
+#include <iostream>
+#include <string>
+#include <cstring>
+using namespace std;
+
+size_t strcasefind(string const &str, string const &target, size_t offset);
