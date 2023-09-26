@@ -1,3 +1,0 @@
-aux/contains_dot.o: aux/contains_dot.cc aux/aux.ih aux/aux.hh
-aux/aux.ih:
-aux/aux.hh:
