@@ -1,2 +1,2 @@
-Create a std::string object containing all letter of the ASCII 
+Create a std::string object containing all letters of the ASCII 
 collection.
