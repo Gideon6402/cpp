@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
     cout << "strcasefind: `" << argv[2] << "' ";
     if (offset == string::npos)
-        cout << "not found\n";
+        cout << "not found\n";c
     else
         cout << "found at offset " << offset << '\n';
 }
