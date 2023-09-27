@@ -2,7 +2,6 @@
 
 size_t strcasefind(string const &str, string const &target, size_t const offset)
 {
-    cout << "hello";
     size_t const len_str    = str.length();
     size_t const len_target = target.length();
 
@@ -11,19 +10,20 @@ size_t strcasefind(string const &str, string const &target, size_t const offset)
     // both strings will be cut of thus no \0 is no problem
     char const *targetPntr = &target[0];
 
-    for (size_t index = offset;
-         index != len_str - len_target;    // no point to check if
-         ++index                           // target doesn't fit anymore
+    for (size_t index = offset;               
+         index != len_str;                     // no point to check if, does run into unknow teritory
+         ++index                               // target doesn't fit anymore
     )
     {
         char const *strPntr = &str[index];
 
         // str will be cut of to length of target and thus if their
         // lexicographical value is the same target is in str
-        if ( strncasecmp(strPntr, targetPntr, len_target) )  
+        if (!strncasecmp(strPntr, targetPntr, len_target))  
         {
-            cout << "hello"
-            return index - offset;         // position from offset is wanted
+            size_t position = index + 1;        // countable starts at 1
+            return position - offset;           // position from offset is wanted
+                                            
         } 
             
     }
