@@ -22,10 +22,8 @@ size_t strcasefind(string const &str, string const &target, size_t const offset)
         if (!strncasecmp(strPntr, targetPntr, len_target))  
         {
             size_t position = index + 1;        // countable starts at 1
-            return position - offset;           // position from offset is wanted
-                                            
-        } 
-            
+            return position - offset;           // position from offset is wanted                             
+        }        
     }
     return string::npos;
 }
