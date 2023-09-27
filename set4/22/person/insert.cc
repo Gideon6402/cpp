@@ -1,3 +1,6 @@
+#include "person.ih"
+
+// Display data of person
 void insert(std::ostream &out)
 {
     cout << "Name: "         << d_name    << '\n'

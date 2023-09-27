@@ -1,31 +1,26 @@
-#include person.ih
+#include "person.ih"
 
 void Person::extract(std::istream cin)
 {
-    while (true)
+    while (true)                           // iterate over all the input lines
     {
         string Line;
-        getline(cin, Line)
+        getline(cin, Line)                 // copy output line onto Line
 
-        int dataMemberSpecifier = 0
+        int dataMemberSpecifier = 0    
 
         for (auto iter = Line.cbegin();
              iter != Line.cend();
              ++iter
         )
         {
-            switch (dataMemberSpecifier)
-            {
-                case 0:
-                    d_name += *iter
-                case 1:
-                    d_address += *iter
-                case 2:
-                    d_phone += *iter
-                case 3: d_phone += *iter
-            }
-            if (*iter == ',')
-                ++dataMemberSpecifier;
+            // go to the next memberspecifier if comma is encountered.
+            if (*iter == ',')               
+                ++dataMemberSpecifier      // no need to ++iter
+            else            
+                add_character(Person);     // probably give references to all data members :(((((
         }
+        if (cin.fail())                    // break if last line is reached
+            break;
     }
 }
