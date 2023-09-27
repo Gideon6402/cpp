@@ -1,0 +1,5 @@
+Data hiding is the concept of making the data 
+in a class not directly available for users
+of instances of that class. Instead the data
+can be viewed or altered by functions of that
+class.
