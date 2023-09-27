@@ -15,7 +15,7 @@ ReturnValues combine(int argc, char **argv)
 
         size_t argNr = stoi( argv[1] );
         returnValues.nr = argNr;
-        returnValues.value = argv[argNr];  
+        returnValues.value = argv[argNr -1]; // start counting at zero
     }
     return returnValues;
 }
