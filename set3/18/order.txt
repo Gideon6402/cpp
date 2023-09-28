@@ -1,3 +1,11 @@
+summary.txt
+main.ih
+main.cc
+ReturnValues.cc
 
-"aux/aux.hh"
-"aux/aux.ih"
+aux/aux.hh
+aux/aux.ih
+aux/boundCall.cc
+aux/structCall.cc
+aux/combine.cc
+aux/printArg.cc
