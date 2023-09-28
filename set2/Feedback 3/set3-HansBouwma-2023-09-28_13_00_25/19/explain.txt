@@ -1,0 +1,242 @@
+// ML: 1
+// Make sure to review the answers for this when they become available.
+In what situation is it appropriate to:
+
+1. define an int-type parameter?
+
+// ML: Use some newlines please.
+It is appropriate to use an int-type parameter when you want to use a value from a variable without modifying this variable. In the code example this is illustrated because get_bonus_grade needs to use gradeWithoutBonus but cannot change the value of it.
+
+aux.hh:
+int gradeWithBonus(int gradeWithoutBonus)
+{
+    int bonus = 1;
+    return gradeWithoutBonus + bonus;
+}
+
+main.cc:
+int gradeWithoutBonus = get_grade(points);
+int gradeWithBonus = get_bonus_grade(gradeWithoutBonus);
+
+cout << "Without bonus: " << gradeWithoutBonus\n"
+     << "With bonus: " << gradeWithBonun\n";
+
+
+2. define a std::string value parameter?
+
+It is appropriate to use an std::string type parameter when your function doesn't want to alter the string argument (corection terminology?) but does want a copy of the argument. In the code example this is illustrated because to_upper_case shouldn't alter myString but needs myString to alter it to all upper case letters.
+
+
+string myString = "hello";
+upperString = to_upper_case(myString);
+
+3. define a const reference to an int-type parameter?
+
+It is appropriate to use a const reference to an int-type parameter when
+there is no need to copy the integer nor to modify it. In the code example this is illustrated because `grade` only needs to be read.
+
+string pass_or_failed( float const &grade)
+{
+    string pass = "pass"
+    string fail = "fail"
+    if (grade >= 5.5f)
+        return pass;
+    else
+        return fail;
+}
+
+// ML: There is not point in using const reference to an int parameter (why?)
+
+// ????????????? What needs get_grade to return
+int const &grade = get_grade()           // returns a pointer, will this work?
+passOrFail = pass_or_fail(grade)
+cout << "You have << passOrFail << "ed the course";
+
+
+define a const reference to a std::string value parameter?
+
+
+It is appropiate to use a const reference to a std::string when you only need to inspect the contents of a string. In the code example this is illustrated because emailadress never gets altered. Note that a reference is convienient here because this scraps the need of having to dereference multiple times.
+
+
+// note that this function doesn't take into acount invalid characters but
+// that is besides the point
+validWebsite( string const &address)
+{
+    bool ok = address.contains(".com") & address.contains("www.");
+    return ok;
+}
+
+extern string const &emailaddress;
+bool is_valid = validEmail(emailaddress);
+
+// ML: Also please use numbering.
+define a non-const reference to an int-type parameter?
+
+It is appropiate to use a non-const reference to an int-type when you want to alter multiple variables. In the code example this is illustrated because convert_cm_to_m uses references to alter x1 and x2.
+
+
+void convert_cm_to_m(double &distance1, double &distance2)
+{
+    distance1 /= 1000;
+    distance2 /= 1000;
+}
+
+double x1 = 1;              // in cm
+double x2 = 2;              // in cm 
+
+double &ref1 = x1;
+double &ref2 = x2;
+
+convert_cm_to_m(ref1, ref2)
+
+
+define a non-const reference to a std::string value parameter?
+
+It is appropiate to use a non-const reference to an int-type when you want to alter multiple strings. In the code example this is illustrated because s1 and s2 are altered because their references are passes to the function to_upper_case.
+
+string_to_upper_case(string &ref1, string &ref2)
+{
+    for(auto iter = ref1.cbegin(), iter != ref1.cend(), ++iter)
+    {
+        *iter = to_upper(iter);
+    }
+}
+
+string s1 = "hello";
+string s2 = "world";
+
+string &ref1 = s1;
+string &ref2 = s2;
+
+string_to_upper_case(ref1, ref2);
+
+
+
+define a const rvalue-reference to an int-type parameter?
+
+// ML: In afct using const rvalue-references is contradictory (why?).
+
+There is no need to use a const rvalue-reference to an int-type parameter because an rvalue doesn't have a (known) location in memory, so there is no worry that this value at the unknown location will be altered.
+
+// does this need an example?
+
+define a const rvalue-reference to a std::string parameter?
+
+There is no need to use a const rvalue-reference to an string-type because an rvalue don't have a location to in memory, 
+
+define an rvalue-reference to an int-type parameter?
+
+It is appropiate to use an rvalue-reference to an int-type we want to force the user of the function to be very optimized; you don't can avoid defining a variable by putting a function in a function. In the code example this is illustrated because the return value of the square function is directly used and not defined somewhere in memory.
+
+
+int sum(int x, int y);
+int square(int &&x);
+
+int squareOfSum(int x, int y)
+{
+    return square( sum(x, y) ); 
+}
+
+
+
+define an rvalue-reference to a std::string parameter?
+
+// statData is an object containing a lot of data
+
+statData &&makeLongDataFile(type statQuantity1, type statQuantity2,
+                            type etc );
+{
+    return bigAssObject
+}
+
+statData results = procesData( statData &&bigAssObject)
+
+
+
+
+return an int-type value?
+It is appropiate to use an int-type value as return value when the a function want to return an integer that was calculated in the function body. This happens very often. In the code example this is illustrated because In the code example this is illustrated because sum return an integer. It is not an const int because it is altered afterwards
+
+int sum(x, y)
+{
+    return x + y
+}
+
+x = 1;
+x = 2;
+
+var = sum(x, y)
+
+var *= 2  
+
+return a std::string value?
+
+It is appropiate to use an string-type return value when a function creates a string and want to store this string on the lower stack. This is illustrated in the code below because createAlphabet returns a string. 
+
+
+string createAlphabet()
+{
+    for(size_t i = 0; i != 26; ++i)
+    {
+        cout << 'a'++;
+    }
+}
+
+int main()
+{
+    string alphabet = createAlphabet();
+    upperCaseAlphabet = string_to_upper(alphabet);
+    cout << upperCaseAlphabet;
+}
+
+
+
+return a const reference to an int?
+A function cannot create reference to variables that it defined because at the end of a function these variables will be deleted. Therefore the only time it would be useful for a function to return a reference is when it gets multiple references as arguments and has to select one of them to return.
+
+int a = 1
+int b = 2
+int c = 3
+
+&int maximum(int a, int b, int c)
+{
+    int max = a;
+    if(b > a)
+        max = c;
+    if(c > a & c > b)
+        max = c;
+}
+
+// the user might input another value later in the program that will 
+// potentially overwrite the maximum value
+
+
+return a non-const reference to an int?
+The same as before only now the programmer want to communicate that this maximum should never be changed again.
+
+// ML: Can be used to access a modifiable int or struct.
+
+return a non-const reference to a std::string?
+Same as with integer but now we could check which string is lexiographically greater.  
+
+return a const rvalue-reference to an int?
+
+This is never appropiate to use. A return value is an rvalue on itself and usually is assigned to an lvalue.
+
+
+return a const rvalue-reference to a std::string?
+
+Dito
+
+return an rvalue-reference to an int?
+Dito
+
+
+return an rvalue-reference to a std::string?
+Dito
+
+
+
+
+

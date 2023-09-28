@@ -1,0 +1,2 @@
+On my (Hans') laptop it start to be noticeable at 32,
+from this point the computation does not look instant anymore.

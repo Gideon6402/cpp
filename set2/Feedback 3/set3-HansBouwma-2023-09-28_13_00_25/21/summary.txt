@@ -1,0 +1,4 @@
+Implement findcase to perform case-insensitive string finding.
+It returns the offset of the first occurrence of target in str,
+starting at the given offset, or string::npos if not found.
+Use the provided demo-program for testing.

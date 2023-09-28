@@ -1,0 +1,2 @@
+Make program that counts either characters,
+the words, or the lines from the input stream

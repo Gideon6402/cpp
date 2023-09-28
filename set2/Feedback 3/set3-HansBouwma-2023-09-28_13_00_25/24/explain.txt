@@ -1,0 +1,23 @@
+`-O<number>` sets the optimisation level for the compiler.
+The higher the number, the more optimisation flags will be enabled.
+
+`-O1` tries to optimise for both speed and size of the executable,
+with little to know impact on compilation time.
+
+`-O2` same as above, but takes more time to compile in order to
+provide even greater performance.
+
+`-O3` same situation as above: greater performance; longer compilation time.
+
+From the profiling results we see that setting an optimisation flag gets rid
+of all `fun` and `fun2` function calls, which drastically increases performance.
+The same goes for the `callRef` function, which entirely disappears.
+
+Functions `callValue` and `callRef` call `fun` and `fun2`, respectively.
+The only difference between `fun` and `fun2` being that `fun2` makes its
+parameter constant. Making parameters constant thus seems to have the
+effect of drastically improving performance.
+
+Somewhat paradoxically, `-O3` seems to have the worst ms/call of all options.
+I am not sure why this is.
+// ML: over-optimization causing problems on some architectures.

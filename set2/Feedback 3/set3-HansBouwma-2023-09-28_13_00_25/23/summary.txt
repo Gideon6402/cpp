@@ -1,0 +1,4 @@
+Create a custom C++ library, libcppmath.a, for integral square roots
+and trigonometric functions. Implement a recursive square root algorithm.
+Submit code and compare executable sizes between library-linked
+and source-linked versions, mentioning possible Link-Time Optimization effects.

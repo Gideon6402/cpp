@@ -1,0 +1,4 @@
+This exercise aims to teach the differentiation of return and parameter types
+in C++. Each question requires examples demonstrating when and why specific
+types should be used. It covers various aspects, such as int and std::string,
+to enhance understanding of type selection in C++.

@@ -1,0 +1,72 @@
+// ML: Q
+#include "cppmath.h"
+
+int sqrt(int arg)
+{
+if(arg>=0){
+unsigned long long result=sqrt(arg);
+result=static_cast<int>(result);
+return result;
+}}
+
+size_t sqrt(size_t arg)
+{
+unsigned long long result=sqrt(arg);
+result=static_cast<size_t>(result);
+return result;
+}
+
+unsigned long long sqrt(unsigned long long arg)
+{
+
+int arg;
+
+if(arg<2)
+return arg;
+
+int sqrt=0,countpairs=0,pairs[10];
+
+while(arg!=0)
+{
+pairs[countpairs]=arg%100;
+arg=arg/100;
+countpairs++;
+}
+
+countpairs--;
+
+for(size_t i=1;i<countpairs+1;i++)
+{
+   int a=1;
+
+   while(pairs[countpairs]>=a*a)
+      a++;
+
+   a--;
+
+   int b=0,best=0, pq=pairs[countpairs]*100+pairs[countpairs-i];
+
+   while(pq>=(10*a + b)*(10*a + b))
+     b++;
+
+   b--;
+
+   best=(pq - 100*a*a)/(20*a);
+
+   while((10*a+best)*(10*a+best)>pq)
+     best--;
+
+   sqrt=10*a+best;
+   pairs[countpairs]=pq;
+}
+return sqrt;
+}
+
+
+
+double sin(size_t degrees)
+{
+double radiants=(m_pi*degrees)/180.0;
+double result=sin(radiants);
+return result;
+}

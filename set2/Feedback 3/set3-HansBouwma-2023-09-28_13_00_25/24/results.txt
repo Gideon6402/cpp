@@ -1,0 +1,42 @@
+No optimisation flag:
+%   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 47.78      0.21     0.21 10000000     0.00     0.00  fun()
+ 40.96      0.39     0.18 10000000     0.00     0.00  fun2()
+  6.83      0.42     0.03                             _init
+  2.28      0.43     0.01        1    10.01   190.22  callRef()
+  2.28      0.44     0.01        1    10.01   220.25  callValue()
+  0.00      0.44     0.00        2     0.00     0.00  std::char_traits<char>::length(char const*)
+  0.00      0.44     0.00        2     0.00     0.00  std::__new_allocator<char>::~__new_allocator()
+  0.00      0.44     0.00        2     0.00     0.00  void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)
+  0.00      0.44     0.00        2     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+  0.00      0.44     0.00        2     0.00     0.00  std::__is_constant_evaluated()
+  0.00      0.44     0.00        2     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::_Guard(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)
+  0.00      0.44     0.00        2     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::~_Guard()
+
+
+
+
+Level 1 optimisation:
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+100.22      0.01     0.01        1    10.02    10.02  callValue()
+  0.00      0.01     0.00        2     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+
+
+
+
+Level 2 optimisation:
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+100.22      0.01     0.01        1    10.02    10.02  callValue()
+  0.00      0.01     0.00        2     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+
+
+
+
+Level 3 optimisation:
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+100.22      0.03     0.03        1    30.07    30.07  callValue()
+  0.00      0.03     0.00        2     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)

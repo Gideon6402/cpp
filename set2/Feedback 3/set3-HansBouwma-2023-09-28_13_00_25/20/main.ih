@@ -1,0 +1,9 @@
+#include <iostream>
+#include <string>
+
+//no advanced structure so derectives can be placed here:
+using namespace std;    
+
+void count_characters();
+void count_words();
+void count_lines();

@@ -1,0 +1,4 @@
+This exercise teaches returning multiple values from a function in C++. 
+ou design a "combine" function, returning a struct with existence info,
+argument number, and value. The program uses "structCall" and "boundCall"
+to process and display requested arguments based on command-line inputs.
