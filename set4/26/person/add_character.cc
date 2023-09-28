@@ -1,3 +1,5 @@
+#include "person.ih"
+
 void add_character()
 {
     switch (dataMemberSpecifier)
