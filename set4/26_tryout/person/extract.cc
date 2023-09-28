@@ -1,7 +1,7 @@
 #include "person.ih"
 
 // add data from input string to array of strings
-string * Person::extract(std::istream &inputStream)   
+string * Person::extract()   
 {
 
     // Store the 4 data in an array of strings.
@@ -14,9 +14,10 @@ string * Person::extract(std::istream &inputStream)
     while (true)                        // iterate over all the input lines
     {
         string Line;
-        getline(inputStream, Line);                          // copy output line onto Line
+        getline(cin, Line);                          // copy output line onto Line
+        cout << "helloooo";
         add_characters(inputValues, Line, dataMemberSpecifier); //the 
-        if (inputStream.fail())
+        if (cin.fail())
             break;
     }
 

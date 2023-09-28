@@ -46,7 +46,7 @@ class Person
         }
 
         void insert(std::ostream &cout);                // insert data into cout
-        std::string * extract(std::istream &cin);            // extract data from cin, string [] ?
+        std::string * extract();            // extract data from cin, string [] ?
 
     private:
         void add_characters(std::string *inputValues, std::string &Line, std::size_t &dataMemberSpecifier);

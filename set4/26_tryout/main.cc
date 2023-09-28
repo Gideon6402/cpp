@@ -3,7 +3,7 @@
 int main()
 {
     Person person;
-    person.extract(cin);
+    person.extract();
     cout << person.name()
          << person.address()
          << person.phone() 
