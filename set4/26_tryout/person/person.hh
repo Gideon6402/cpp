@@ -5,6 +5,7 @@
 
 class Person
 {
+    #include <string>
     std::string d_name;         // name of person
     std::string d_address;      // address field
     std::string d_phone;        // telephone number
