@@ -1,11 +1,12 @@
-#include main.ih
-
-// I forgot that person should be capitalized :(((((((
-
+#include "main.ih"
 
 int main()
 {
     Person person;
     person.extract(cin);
-    cout << person.name() << person.address() << person.phone() << person.mass() <<'\n';
-}
+    cout << person.name()
+         << person.address()
+         << person.phone() 
+         << person.mass() 
+         <<'\n';
+ }
