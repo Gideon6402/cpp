@@ -1,0 +1,3 @@
+person/getword.o: person/getword.cc person/person.ih person/person.hh
+person/person.ih:
+person/person.hh:

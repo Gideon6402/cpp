@@ -1,0 +1,2 @@
+Define a person class that can extract info from the
+input stream and insert info to the output stream.

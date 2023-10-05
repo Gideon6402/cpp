@@ -1,0 +1,4 @@
+person/extractLine.o: person/extractLine.cc person/person.ih \
+ person/person.hh
+person/person.ih:
+person/person.hh:

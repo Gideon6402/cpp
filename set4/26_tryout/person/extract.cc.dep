@@ -1,0 +1,3 @@
+person/extract.o: person/extract.cc person/person.ih person/person.hh
+person/person.ih:
+person/person.hh:

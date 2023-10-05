@@ -1,0 +1,4 @@
+person/add_character.o: person/add_character.cc person/person.ih \
+ person/person.hh
+person/person.ih:
+person/person.hh:

@@ -1,0 +1,3 @@
+main.o: main.cc main.ih person/person.hh
+main.ih:
+person/person.hh:

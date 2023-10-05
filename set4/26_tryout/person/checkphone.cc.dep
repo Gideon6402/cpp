@@ -1,0 +1,4 @@
+person/checkphone.o: person/checkphone.cc person/person.ih \
+ person/person.hh
+person/person.ih:
+person/person.hh:

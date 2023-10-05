@@ -1,0 +1,4 @@
+person/initialize.o: person/initialize.cc person/person.ih \
+ person/person.hh
+person/person.ih:
+person/person.hh:
