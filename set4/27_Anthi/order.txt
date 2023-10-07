@@ -1,0 +1,11 @@
+summary.txt
+
+main.ih
+main.cc
+
+aux/aux.ih
+aux/aux.hh
+aux/read.cc
+aux/write.cc
+
+-information.txt

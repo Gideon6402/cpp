@@ -1,26 +1,25 @@
 #include "person.ih"
 
-void Person::extract(std::istream cin)
+// Store the 4 data in an array of strings.
+// Start adding characters to next element
+// in the array if the comma is reached
+void Person::extract(std::istream &inputStream)   
 {
-    while (true)                           // iterate over all the input lines
+    // set up array of strings
+    size_t dataMemberSpecifier = 0;
+    string inputValues[SIZE];              // "default-constructs" all strings
+
+    // extract data from input stream to inputValues
+    while (true)
     {
-        string Line;
-        getline(cin, Line)                 // copy output line onto Line
-
-        int dataMemberSpecifier = 0    
-
-        for (auto iter = Line.cbegin();
-             iter != Line.cend();
-             ++iter
-        )
-        {
-            // go to the next memberspecifier if comma is encountered.
-            if (*iter == ',')               
-                ++dataMemberSpecifier      // no need to ++iter
-            else            
-                add_character(Person);     // probably give references to all data members :(((((
-        }
-        if (cin.fail())                    // break if last line is reached
+        if (dataMemberSpecifier >= MASS)  // don't extract another line if inputValues is full
             break;
+
+        string line;
+        getline(inputStream, line);               // copy input line into line 
+        getInputValues(inputValues, line, dataMemberSpecifier);
     }
+
+    initialize(inputValues);
 }
+

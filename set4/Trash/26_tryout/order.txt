@@ -1,0 +1,17 @@
+summary.txt
+
+-main.ih
+-main.cc
+
+person/person.ih
+person/person.hh
+person/person1.cc
+person/person2.cc
+person/setPhone.cc
+person/extract.cc
+person/extractLine.cc
+person/add_character.cc
+person/initialize.cc
+person/insert.cc
+
+-information.txt

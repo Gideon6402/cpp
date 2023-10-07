@@ -1,8 +1,6 @@
-#include "line/line.hh"
+#include "person.hh"
 
 #include <iostream>
-
+#include <string>
 using namespace std;
-
-
 

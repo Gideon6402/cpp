@@ -1,0 +1,3 @@
+Write a pogram that creates five Person objects from 
+the input stream and can also output to the outputstream
+the data of the Person objects.
