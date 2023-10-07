@@ -1,0 +1,2 @@
+line/create_substring.cc.o: line/create_substring.cc line/line.ih \
+ line/line.hh
