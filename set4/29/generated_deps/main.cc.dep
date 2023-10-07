@@ -1,1 +1,1 @@
-main.cc.o: main.cc main.ih
+main.cc.o: main.cc main.ih ../28/line/line.hh parser/parser.hh

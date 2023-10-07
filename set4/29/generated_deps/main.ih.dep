@@ -1,1 +1,1 @@
-main.ih.gch: main.ih
+main.ih.gch: main.ih ../28/line/line.hh parser/parser.hh
