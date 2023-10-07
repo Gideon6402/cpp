@@ -2,11 +2,11 @@
 
 bool Line::getLine()
 {
-    // extract line
-    // define d_line
+    // initialize data members
     string line;
     getline(cin, line);
     d_line = line;
+    d_curPos = 0;
 
     // determine whether is has non whitespace characters
     if (has_non_ws(d_line))
@@ -14,3 +14,5 @@ bool Line::getLine()
     else
         return false;
 }
+
+// It would have been better if this was a contructor.
