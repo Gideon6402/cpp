@@ -1,0 +1,2 @@
+parser/parser.ih.gch: parser/parser.ih parser/../../28/line/line.hh \
+ parser/parser.hh

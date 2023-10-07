@@ -1,0 +1,2 @@
+parser/number.cc.o: parser/number.cc parser/parser.ih \
+ parser/../../28/line/line.hh parser/parser.hh
