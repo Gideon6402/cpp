@@ -18,10 +18,18 @@ class Line
         bool getLine();
         std::string next();
 
+        // getters
+        std::string const line();
+
     private:
         // support member functions 
         bool has_non_ws(std::string const &line);
         void create_substring(std::string &substring);
 };
+
+inline std::string const Line::line()
+{
+    return d_line;
+}
 
 #endif

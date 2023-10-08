@@ -15,6 +15,12 @@ class Parser
             EOLN = 2
         };
 
+        typedef std::string::const_iterator C_iter;
+        
+        // getters
+        Line line();
+
+        // member function
         bool reset();
         Return number(double *dest);
         bool isIntegral();
@@ -27,6 +33,11 @@ class Parser
 
 
 };
+
+inline Line Parser::line()
+{
+    return d_line;
+}
 
 #endif
 

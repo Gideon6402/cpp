@@ -1,6 +1,8 @@
 #include "parser.ih"
 
-string next()
+string Parser::next()
 {
-    return " ";
+    return d_line.next();
 }
+
+// return types were a value is passed don't need a const right?

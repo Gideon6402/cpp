@@ -3,5 +3,6 @@
 int main()
 {
     Parser parser;
-    // parser.reset();       // gives error
+    parser.reset();    
+    // cout << parser.line().next() << '\n';
 }
