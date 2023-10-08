@@ -1,0 +1,2 @@
+28/line/create_substring.cc.o: 28/line/create_substring.cc \
+ 28/line/line.ih 28/line/line.hh

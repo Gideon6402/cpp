@@ -1,0 +1,2 @@
+28/line/has_non_ws.cc.o: 28/line/has_non_ws.cc 28/line/line.ih \
+ 28/line/line.hh

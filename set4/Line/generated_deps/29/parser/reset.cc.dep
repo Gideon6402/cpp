@@ -1,0 +1,2 @@
+29/parser/reset.cc.o: 29/parser/reset.cc 29/parser/parser.ih \
+ 29/parser/../../28/line/line.hh 29/parser/parser.hh

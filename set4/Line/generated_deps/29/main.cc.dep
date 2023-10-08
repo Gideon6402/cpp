@@ -1,0 +1,2 @@
+29/main.cc.o: 29/main.cc 29/main.ih 29/../28/line/line.hh \
+ 29/parser/parser.hh
