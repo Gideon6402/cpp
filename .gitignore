@@ -1,3 +1,5 @@
 # Processed files
 *.out
 *.o 
+*.a
+generated_deps/
