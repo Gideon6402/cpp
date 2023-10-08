@@ -1,2 +1,0 @@
-parser/isintegral.cc.o: parser/isintegral.cc parser/parser.ih \
- parser/../../28/line/line.hh parser/parser.hh

@@ -1,2 +1,0 @@
-parser/puredouble.cc.o: parser/puredouble.cc parser/parser.ih \
- parser/../../28/line/line.hh parser/parser.hh

@@ -1,2 +1,0 @@
-parser/next.cc.o: parser/next.cc parser/parser.ih \
- parser/../../28/line/line.hh parser/parser.hh

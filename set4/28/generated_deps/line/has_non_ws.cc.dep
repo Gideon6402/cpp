@@ -1,1 +1,0 @@
-line/has_non_ws.cc.o: line/has_non_ws.cc line/line.ih line/line.hh
