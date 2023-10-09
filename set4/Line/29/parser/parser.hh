@@ -1,7 +1,9 @@
 #ifndef PARSER_HH_093475
 #define    PARSER_HH_093475
 
-class Line;                            // is this a proper forward declaration?
+#include <string>                      // really necesary?
+#include "../../28/line/line.hh"       //
+// class Line;                            // is this a proper forward declaration?
 
 class Parser
 {
@@ -16,7 +18,9 @@ class Parser
         };
 
         typedef std::string::const_iterator C_iter;
-        
+
+        // needs no constructors because only data member is an object
+
         // getters
         Line line();
 

@@ -1,1 +1,2 @@
-29/main.ih.gch: 29/main.ih 29/../28/line/line.hh 29/parser/parser.hh
+29/main.ih.gch: 29/main.ih 29/parser/parser.hh \
+ 29/parser/../../28/line/line.hh 29/../28/line/line.hh
