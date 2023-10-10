@@ -1,11 +1,10 @@
-The name of an array points to the first variable (value (?)) of the array. An array is collection of consecutive pointers to values. 
+1. The name of an array points to the first element of the array. An array is collection of consecutive pointers to values.
 
-(The name of) an array is a pointer variable but not necessarily the other way around. The name of an array points to first element in the array. A pointer variable can point to any variable even if this variable is not the first element in a list.
+The name of an array is a pointer variable but a pointer doesn't necessarily point to the first element of an array. A pointer variable can point to any variable even if this variable is not the first element in a list.
 
-A pointer variable is the adress of the variable it points to. It can be derefenced to alter or view its contents. A reference is a alias to the variable it references. Once a reference is made, any alteration or viewing of this reference will actually alter/view the variable it references to.
+A pointer variable is the address of the variable it points to. It can be derefenced to alter or view its contents.
+
+2. A reference is a alias to the variable it references. Once a reference is made, any alteration or viewing of this reference will actually alter/view the variable it references to.
 
  
-    
-
-
-What do we mean by the word array? Literally the name list in list[] or more the concept of something that contains elements? Assume: we mean the name
+What do we mean by the word array? Literally the name list in list[] or more the concept of something that contains elements? Assume: we mean the name.
