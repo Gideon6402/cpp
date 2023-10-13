@@ -1,0 +1,47 @@
+----------------------------------------------------------------------------
+  definition:         rewrite: 
+----------------------------------------------------------------------------
+  int x[8];           x[4]            
+
+pointer notation:  *(x + 4)
+       semantics:  x + 4 points to the location of the 4th int beyond x.      // it points to value, not the location right?
+                   That element is reached using the dereference operator (*)  
+
+----------------------------------------------------------------------------
+  int x[8];           x[2] = x[3];
+
+pointer notation:     *(x + 2) = *(x + 3)
+       semantics:     x + 2 points to the 2nd int elemement beyond x.
+                      This element is reached with * and assigned the value
+                      of the third element beyond 
+----------------------------------------------------------------------------
+  char *argv[8];      cout << argv[2];
+
+pointer notation:     
+       semantics:
+----------------------------------------------------------------------------
+  int x[8];           &x[10] - &x[3];
+ 
+pointer notation:
+       semantics:
+----------------------------------------------------------------------------
+  main's argv;        argv++[0];
+
+pointer notation:
+       semantics:
+----------------------------------------------------------------------------
+  main's argv;        argv[0]++;
+
+pointer notation:
+       semantics:
+----------------------------------------------------------------------------
+  main's argv;        ++argv[0];
+
+pointer notation:
+       semantics:
+----------------------------------------------------------------------------
+  main's argv;        ++argv[0][2];
+
+pointer notation:
+       semantics:
+----------------------------------------------------------------------------
