@@ -1,0 +1,5 @@
+#include "strings/strings.hh"
+#include <string>
+#include <iostream>
+
+using namespace std;    

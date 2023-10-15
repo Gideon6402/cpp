@@ -1,0 +1,7 @@
+#include "strings.hh"
+
+#include <istream>
+#include <string>
+
+using namespace std;
+
