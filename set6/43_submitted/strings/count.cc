@@ -9,5 +9,5 @@ size_t Strings::count(char *environLike[])
         ;
 
                         // ptr just passed beyond the 0-ptr
-    return  (ptr - 1) - environLike;
+    return ptr - environLike - 1;
 }
