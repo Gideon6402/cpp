@@ -1,0 +1,22 @@
+The class is missing a destructor.
+
+Since the 'new' operator is called several times to allocate memory,
+we require the 'delete' operator to be called for freeing memory as well;
+This should be done in the destructor.
+
+
+Answers:
+Two at-members are declared because there are two different functions needed
+ for const and non-const Strings objects.
+
+The non-const at is used in the main function.
+
+An example where the other at member is used would be to change line 5 to
+"Strings const strings{ argc, argv};" In this way, Strings is a const object,
+which make sense since argc and argv won't likely be changed while the
+program is running.
+
+
+
+
+

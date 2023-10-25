@@ -1,0 +1,1 @@
+This exercise focuses on identifying and fixing a serious defect in an existing Strings class that loads lines from an input file into memory. It also explores the reasons behind having two at member functions and identify their respective uses.
