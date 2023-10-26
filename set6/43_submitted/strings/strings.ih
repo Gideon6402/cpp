@@ -2,6 +2,7 @@
 
 #include <istream>
 #include <string>
+#include <memory>                 // why did my code work without this one?
 
 using namespace std;
 

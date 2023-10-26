@@ -6,7 +6,11 @@ void Strings::enlarge()
     d_capacity *= 2;
 
     for (size_t idx = 0; idx != d_size; ++idx)    // copy existing strings
+    {
         newArray[idx] = d_ptrArray[idx];
+        // delete d_ptrArray[idx];
+        // *d_ptrArray[idx].~string;   // Why can't I do this?
+    }
 
     delete d_ptrArray;
     d_ptrArray = newArray;
