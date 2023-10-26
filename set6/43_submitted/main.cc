@@ -3,6 +3,9 @@
 int main()
 {
     Strings strings;
-    strings.add("hello")
-    strings.at(0)
+    for (size_t poging = 0; poging != 18; ++poging)
+    {
+        strings.add(to_string(poging));
+    }
+    cout << strings.at(17) << '\n';
 }

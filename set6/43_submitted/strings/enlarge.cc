@@ -1,11 +1,21 @@
 #include "strings.ih"
 
-string *Strings::enlarge()
+void Strings::enlarge()
 {
-    string *ret = new string[d_size + 1];       // room for an extra string
+    string **newArray = rawPointer(d_capacity * 2);    // double the capicity
+    d_capacity *= 2;
 
-    for (size_t idx = 0; idx != d_size; ++idx)  // copy existing strings
-        ret[idx] = d_str[idx];
+    for (size_t idx = 0; idx != d_size; ++idx)    // copy existing strings
+        newArray[idx] = d_ptrArray[idx];
 
-    return ret;
+    delete d_ptrArray;
+    d_ptrArray = newArray;
 }
+
+
+    // string *newArray = new string[d_size + 1];       // room for an extra string
+
+    // for (size_t idx = 0; idx != d_size; ++idx)  // copy existing strings
+    //     newArray[idx] = d_str[idx];
+
+    // return newArray;
