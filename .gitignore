@@ -2,5 +2,5 @@
 *.out
 *.o 
 *.a
-*.gch
+*.ih.gch
 generated_deps/
