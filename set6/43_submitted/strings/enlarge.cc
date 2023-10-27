@@ -7,13 +7,12 @@ void Strings::enlarge()
 
     for (size_t idx = 0; idx != d_size; ++idx)    // copy existing strings
     {
-        newArray[idx] = move(d_ptrArray[idx]);
+        newArray[idx] = d_ptrArray[idx];
     }
 
     delete d_ptrArray;
     d_ptrArray = newArray;
 }
-
 
     // string *newArray = new string[d_size + 1];       // room for an extra string
 

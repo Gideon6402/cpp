@@ -2,7 +2,9 @@
 
 Strings::~Strings()
 {
-    delete[] d_str;
+    for (; --d_size ;)
+        delete d_ptrArray[d_size - 1];
+    delete d_ptrArray;
 }
 
 
