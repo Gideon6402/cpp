@@ -7,8 +7,9 @@ void Strings::add(string const &next)
         enlarge();
     
     // add pointer
-    string *nextPtr = new string{ next };
-    new (d_ptrArray + d_size) string *{ nextPtr };  // place new ptr at the end
+    // string *nextPtr = new string{ next };
+    // new (d_ptrArray + d_size) string *{ nextPtr };  // place new ptr at the end
+    d_ptrArray[d_size] = new string{ next };
     ++d_size;
 }
 
