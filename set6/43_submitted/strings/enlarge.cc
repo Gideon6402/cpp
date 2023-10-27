@@ -7,9 +7,7 @@ void Strings::enlarge()
 
     for (size_t idx = 0; idx != d_size; ++idx)    // copy existing strings
     {
-        newArray[idx] = d_ptrArray[idx];
-        // delete d_ptrArray[idx];
-        // *d_ptrArray[idx].~string;   // Why can't I do this?
+        newArray[idx] = move(d_ptrArray[idx]);
     }
 
     delete d_ptrArray;
