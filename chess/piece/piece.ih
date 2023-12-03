@@ -1,2 +1,3 @@
 #include "piece.hh"
 #include <cstdint>
+#include <string>
